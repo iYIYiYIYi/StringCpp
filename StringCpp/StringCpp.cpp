@@ -125,3 +125,15 @@ Status Match(char inchars[],int length,int* Loc,StaticLink* SLp) {
 	return OK;
 }
 
+int main() {
+	StaticLink SLp;
+	string e; char pos;
+	int i;
+	string in;
+	cin >> in;
+	int length = in.length;
+
+	InitStaticLink(&SLp);
+
+	return OK;
+}
