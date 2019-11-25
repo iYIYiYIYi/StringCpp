@@ -95,7 +95,7 @@ Status DeleteSL(StaticLink* SLp, int deli, Elemtype* e) {
 	return OK;
 }
 
-Status ShowSL(StaticLink SLp) {
+Status ShowSL(StaticLink SLp) {//输出 Space 信息
 	int i;
 	for (i = 0; i < MAXSIZE; i++)
 		printf("-8s%2%d\n", SLp.Space[i].data, SLp.Space[i].next);
@@ -108,31 +108,27 @@ Status push(StaticLink* SLp, Elemtype e) {
 	Insert(SLp, loc, e);
 }
 
-Status addString(char inchars[], int length, StaticLink* SLp) {	//往静态链表里存入串
+Elemtype addString(char inchars[], int length, StaticLink* SLp) {	//往静态链表里存入串
+	int string_Head = SLp->Space[0].next;//头，表示串的起始位置
 	for (int i = 0; i < length; i++)
 	{
 		if (!push(SLp, inchars[i]))
 			return ERROR;
 	}
 	push(SLp, '\0');
-	return OK;
+	return string_Head;//返回字符串起始位置
 }
 
-Status Match(char inchars[],int length,int* Loc,StaticLink* SLp) {
-	for(int i=0;i<length;i++){
-
-	}
+Status Match(StaticLink* SLp) {	//字符串匹配
+	
 	return OK;
 }
 
 int main() {
 	StaticLink SLp;
 	string e; char pos;
-	int i;
-	string in;
-	cin >> in;
-	int length = in.length;
-
+	char inchars[MAXSIZE];
+	cin >> inchars;
 	InitStaticLink(&SLp);
 
 	return OK;
