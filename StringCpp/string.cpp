@@ -8,7 +8,7 @@ private:
 	char* Head=NULL;//头,用于串的寻找
 	int length=0;//长度
 public:
-	Mystring() 
+	Mystring()
 	{
 	}//默认构造，无参
 	Mystring(const char equal_const_s[])
@@ -215,6 +215,28 @@ istream& operator>>(istream& in, Mystring& s)
 }//右移号重载，输入操作
 int main()
 {
+	Mystring str;
+	cout<<"请输入一个字符串:";
+	cin >> str;
+	cout<<"这个串的长度是："<<endl;
+	int len = str.size();
+	cout<<len <<endl;
+	cout<<"这个串的第1字符开始长度为2的子串是"<<endl;
+	Mystring s = str.substring(1,2);
+	cout<<s<<endl;
+	bool isempty = s.empty();
+	cout<<"该子串是否为空:"<<isempty<<endl;
+	cout<<"在输入的字符串中查找子串位置"<<endl;
+	int index = str.find_equal_index(s);
+	cout<<index<<endl;
+	cout<<"删除字符串的最后一个字符后"<<endl;
+	str.mydelete(len-1,1);
+	len = len-1;
+	cout<<str<<endl;
+	Mystring s1 = "BUCT";
+	cout<<"在末尾插入一个串“BUCT” "<<endl;
+	str.myinsert(s1,len);
+	cout<<str<<endl;
 
 }
 
