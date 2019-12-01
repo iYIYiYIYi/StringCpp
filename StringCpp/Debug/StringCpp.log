@@ -1,6 +1,0 @@
-﻿  StringCpp.cpp
-D:\onedrive\OneDrive - mail.buct.edu.cn\代码\Cpp\StringCpp\StringCpp\StringCpp.cpp(19,2): warning C4091:  “typedef ”: 没有声明变量时忽略“Node”的左侧
-D:\onedrive\OneDrive - mail.buct.edu.cn\代码\Cpp\StringCpp\StringCpp\StringCpp.cpp(96,10): warning C4476:  "printf": 格式说明符中的类型字段字符“%”未知
-D:\onedrive\OneDrive - mail.buct.edu.cn\代码\Cpp\StringCpp\StringCpp\StringCpp.cpp(96,35): warning C4474:  printf: 格式字符串中传递的参数太多
-D:\onedrive\OneDrive - mail.buct.edu.cn\代码\Cpp\StringCpp\StringCpp\StringCpp.cpp(96,35): message :  占位符和其参数预计 0 可变参数，但提供的却是 2 参数
-  StringCpp.vcxproj -> D:\onedrive\OneDrive - mail.buct.edu.cn\代码\Cpp\StringCpp\StringCpp\Debug\StringCpp.exe
